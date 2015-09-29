@@ -34,7 +34,7 @@ http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd">
 		<db:select config-ref="derby" doc:name="Database">
 			<db:parameterized-query><![CDATA[SELECT * FROM FLIGHTS]]></db:parameterized-query>
 		</db:select>
-		<object-to-string-transformer doc:name="Object to String" />
+		<object-to-json-transformer doc:name="Object to JSON" />
 		<jms:outbound-endpoint queue="flights" connector-ref="activeMQ" doc:name="JMS" />
 	</flow>
 	

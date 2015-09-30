@@ -45,7 +45,7 @@
 			      	<deployment>
 			        	<type>agent</type>
 			      	</deployment>
-			      	<uri>http://localhost:9999</uri>
+			      	<uri>http://localhost:2576</uri>
 			    </configuration>
 			    <executions>
 			      	<execution>
